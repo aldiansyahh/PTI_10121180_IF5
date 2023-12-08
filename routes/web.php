@@ -64,7 +64,9 @@ Route::get('/matakuliahs', [MatakuliahController::class,'matakuliahs'])->name('m
 // ===========================
 
 Route::get('/login', [LoginController::class, 'login'])->name('login');
+Route::get('/loginAdmin', [AdminController::class, 'loginAdmin'])->name('loginAdmin');
 Route::post('actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');
+Route::post('actionloginAdmin', [LoginController::class, 'actionloginAdmin'])->name('actionloginAdmin');
 
 // Route::get('mahasiswa', [HomeController::class, 'index'])->name('mahasiswa');
 Route::get('actionlogout', [LoginController::class, 'actionlogout'])->name('actionlogout')->middleware('auth')

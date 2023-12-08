@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Admin;
 use Illuminate\Support\Facades\Session;
 
 
@@ -13,12 +15,11 @@ class LoginController extends Controller
     public function login()
     {
         if (Auth::check()) {
-            return redirect('siswas');
+            return redirect('siswass');
         }else{
             return view('login');
         }
     }
-
     public function actionlogin(Request $request)
     {
         $data = [
@@ -29,16 +30,19 @@ class LoginController extends Controller
 
 
         if (Auth::Attempt($data)) {
-            return redirect('siswas');
+            return redirect('siswass');
         }else{
             Session::flash('error', 'Email atau Password Salah');
             return redirect('/login');
         }
     }
 
+
+
+
     public function actionlogout()
     {
         Auth::logout();
-        return redirect('/login');
+        return redirect('');
     }
 }

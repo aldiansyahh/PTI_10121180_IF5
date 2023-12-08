@@ -10,7 +10,7 @@
 <body>
     <div class="container"><br>
         <div class="col-md-4 col-md-offset-4">
-            <h2 class="text-center"><b>Data Nilai Mahasiswa</b><br></h2>
+            <h2 class="text-center"><b>Login</b><br></h2>
             <hr>
             @if(session('error'))
             <div class="alert alert-danger">
@@ -30,7 +30,7 @@
                 <button type="submit" class="btn btn-primary btn-block">Log In</button>
                 <hr>
                 <hr>
-                <p class="text-center"><a class="btn btn-primary btn-block" href="/siswass">Masuk Sebagai Mahasiswa</a></p>
+                <p class="text-center"><a class="btn btn-primary btn-block" href="/login">Masuk Sebagai Mahasiswa</a></p>
             </form>
         </div>
     </div>
