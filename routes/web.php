@@ -64,7 +64,7 @@ Route::get('/matakuliahs', [MatakuliahController::class,'matakuliahs'])->name('m
 // ===========================
 
 Route::get('/login', [LoginController::class, 'login'])->name('login');
-Route::get('/loginAdmin', [AdminController::class, 'loginAdmin'])->name('loginAdmin');
+Route::get('/loginAdmin', [LoginController::class, 'loginAdmin'])->name('loginAdmin');
 Route::post('actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');
 Route::post('actionloginAdmin', [LoginController::class, 'actionloginAdmin'])->name('actionloginAdmin');
 

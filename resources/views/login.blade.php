@@ -29,8 +29,8 @@
                 </div>
                 <button type="submit" class="btn btn-primary btn-block">Log In</button>
                 <hr>
-                <hr>
-                <p class="text-center"><a class="btn btn-primary btn-block" href="/login">Masuk Sebagai Mahasiswa</a></p>
+                <div class="w-30">
+                <p class="text-center">Belum memiliki akun? <a href="/register">Register</a></p></div>
             </form>
         </div>
     </div>

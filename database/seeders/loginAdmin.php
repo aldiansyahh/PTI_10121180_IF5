@@ -17,12 +17,13 @@ class loginAdmin extends Seeder
     {
         $data = [
             [
-                'nameAdmin' => 'Admin',
-                'emailAdmin' => 'admin123@gmail.com',
-                'passwordAdmin' => bcrypt('admin123'),
+                'name' => 'Admin',
+                'email' => 'admin123@gmail.com',
+                'password' => bcrypt('admin123'),
+                'role' => 'Admin',
             ]
         ];
 
-        DB::table('admin')->insert($data);
+        DB::table('users')->insert($data);
     }
 }

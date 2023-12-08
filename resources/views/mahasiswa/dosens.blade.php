@@ -18,9 +18,7 @@
                             <th>ID</th>
                             <th>ID Dosen</th>
                             <th>Nama Dosen</th>
-                            <th>Jabatan</th>
                             <th>Email</th>
-                            <th>No Telepon</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -29,9 +27,7 @@
                                 <td>{{ $dosen->id }}</td>
                                 <td> {{$dosen->id_dosen}}</td>
                                 <td>{{ $dosen->nama_dosen }}</td>
-                                <td>{{ $dosen->jabatan }}</td>
                                 <td>{{ $dosen->email }}</td>
-                                <td>{{ $dosen->no_telepon }}</td>
                             </tr>
                         @endforeach
                     </tbody>

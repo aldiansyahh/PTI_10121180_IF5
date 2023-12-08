@@ -23,9 +23,7 @@
                 <source src="assets/mp4/bg.mp4" type="video/mp4" />
             </video>
             <!-- "Login Admin" link with higher z-index -->
-            <div style="position: absolute; top: 0; right: 5px; padding: 20px; z-index: 100;">
-                <a class="btn btn-dark" href="/loginAdmin" style="color: white;"> Masuk Sebagai Admin </a>
-            </div>
+
         </div>
 
 
@@ -33,8 +31,9 @@
         <div class="masthead">
             <div class="masthead-content text-white">
                 <div class="container-fluid px-4 px-lg-0">
-                    <h1 class="fst-italic lh-1 mb-4">&ensp;Selamat Datang</h1>
-                    <p class="mb-5">Untuk Mahasiswa, Silahkan tekan tombol Login Mahasiswa dibawah ini.</p>
+                    <h1 class="fst-italic lh-1 mb-4 text-center">Selamat Datang</h1>
+                    <p class="mb-5 text-center">Untuk Mahasiswa, Silahkan tekan tombol Login
+                        dibawah ini.</p>
                     <!-- * * * * * * * * * * * * * * *-->
                     <!-- * * SB Forms Contact Form * *-->
                     <!-- * * * * * * * * * * * * * * *-->
@@ -45,7 +44,7 @@
                     <form id="contactForm" data-sb-form-api-token="API_TOKEN">
                         <!-- Email address input-->
                         <div class="row input-group-newsletter">
-                            <div class="col mb-4"> <p class="text-center"><a class="btn btn-primary btn-block" href="/login">Login Mahasiswa</a></p></div>
+                            <div class="col mb-6"> <p class="text-center"><a  type="button" class="btn btn-success btn-block w-50" href="/login">Login</a></p></div>
  </div>
 
 

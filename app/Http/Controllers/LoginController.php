@@ -30,7 +30,12 @@ class LoginController extends Controller
 
 
         if (Auth::Attempt($data)) {
-            return redirect('siswass');
+            $user=Auth::user();
+            if ($user->role=='Admin') {
+                return redirect('siswas');
+            } else {
+                return redirect('siswass');
+            }
         }else{
             Session::flash('error', 'Email atau Password Salah');
             return redirect('/login');
@@ -43,6 +48,6 @@ class LoginController extends Controller
     public function actionlogout()
     {
         Auth::logout();
-        return redirect('');
+        return redirect('/login');
     }
 }

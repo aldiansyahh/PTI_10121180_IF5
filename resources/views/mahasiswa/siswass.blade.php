@@ -19,8 +19,6 @@
                             <th>Nim</th>
                             <th>Nama Mahasiswa</th>
                             <th>Kelas</th>
-                            <th>Alamat</th>
-                            <th>Jurusan</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -30,8 +28,6 @@
                                 <td>{{ $siswas->nim }}</td>
                                 <td>{{ $siswas->nama_siswa }}</td>
                                 <td>{{ $siswas->kelas }}</td>
-                                <td>{{ $siswas->alamat }}</td>
-                                <td>{{ $siswas->jurusan }}</td>
                             </tr>
                         @endforeach
                     </tbody>
