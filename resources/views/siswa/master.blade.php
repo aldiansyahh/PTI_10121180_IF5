@@ -244,14 +244,20 @@
                             </div>
                         </li>
 
-                        <div class="topbar-divider d-none d-sm-block"></div>
+                        <li class="nav-item dropdown no-arrow">
+                            <div class="nav-link dropdown-toggle"  id="userDropdown"
+                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <div class="mr-2 d-none d-lg-inline text-gray-800 small">
+                                    <i class="fa fa-user">Hello {{ Auth::user()->name }}</i>
 
+                                </div></li>
+                                <div class="topbar-divider d-none d-sm-block"></div>
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="{{ route('actionlogout') }}" id="userDropdown"
                                 role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><i
-                                        class="fa fa-power-off"></i> Log Out</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">
+                                        <i class="fa fa-power-off"></i> Log Out</span>
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"

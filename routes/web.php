@@ -21,6 +21,10 @@ use App\Http\Controllers\SiswasController;
 |
 */
 
+// ALDIANSYAH AL'AYYUBI
+// 10121180
+// IF 5
+
 Route::get('/', function () {
     return view('welcome');
 });

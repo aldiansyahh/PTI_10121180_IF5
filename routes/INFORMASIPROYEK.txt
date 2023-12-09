@@ -1,0 +1,13 @@
+
+Nama  : ALDIANSYAH AL'AYYUBI
+Nim   : 10121180
+Kelas : IF-5
+
+-----------------------------------------------------------------------------------
+
+Saya Membuat Website Untuk Melihat Jadwal kuliah beserta dosen yang akan mengajarnya.
+
+Untuk Akun Admin Sudah Dibuat dalam seeders ('loginAdmin'), maka harus mengetik (php artisan db:seed) dalam terminal terlebih dahulu.
+
+Untuk Mahasiswa/quest yang ingin melihat Jadwal mahasiswa, harus melakukan registrasi terlebih dahulu
+
